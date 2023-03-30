@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Roll the dices</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8" />
+    
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="script/jquery-3.4.1.min.js" defer></script>
+    <script src="script/script.js" defer="defer"></script>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <header>
+            <h1>Roll the dices and have fun!!</h1>
+        </header>
+
+
+        <div id="result">
+            <h2 id="winner">Lets see who is going to win!</h2>
+        </div>
+       
+
+        
+
+                    <div class="playerh">
+                        <h2 class="box_scoreTitle">Human player</h2><br /><br />
+                        <div id="firstpair">
+                        <img id="dice1" src="styles/images/dice_4.png" alt="dice1">
+                        <img id="dice2" src="styles/images/dice_6.png" alt="dice2">
+                        </div>
+                    </div>
+
+
+                <div class="box_content">
+
+                    <h2>Score Board</h2>
+
+                    <div class="box_score">
+                        <h3>Human player</h3>
+                            <ul>
+                                <li id="currentScore1">Current Score:</li>
+                                <li id="totalScore1">Total Score:</li>
+                            </ul>
+                        <h3>Computer</h3>
+                            <ul>
+                                <li id="currentScore2">Current Score:</li>
+                                <li id="totalScore2">Total Score:</li>
+                            </ul>
+                    </div>
+                
+                </div>
+
+                <div class="playerc">
+
+                    <h2 class="box_scoreTitle">Computer</h2><br /><br />
+                    <div id="secondpair">
+                    <img id="dice3" src="styles/images/dicecopy_3.png" alt="dice3">
+                    <img id="dice4" src="styles/images/dicecopy_5.png" alt="dice4">
+                    </div>
+                </div>
+
+                    
+                
+            
+                <div id="buttons">
+                <button type="button" id="btn-roll" class="button"> Play Game </button>
+                <button class="button" id="btn-reset">Reset Game</button>
+                </div>
+            
+                <div id="popup">
+                <button id="instructions-btn">Instructions to play</button>
+
+                <div id="instructions-container" style="display: none;">
+                    <h2>Instructions</h2>
+                    <p>The scoring for the game works as follows:
+                        - If any of the players two dice comes up as a 1 then the score for that 
+                        round for the player is 0. eg: if the player rolls a 6 and 1, they get a 
+                        score of 0
+                        - If the player rolls a pair of the same numbers then the players score 
+                        is the total of the two dice times 2. eg: if he player rolls 5 and 5, 
+                        they get a score of (5+5)*2=20
+                        - If the player rolls any other combination of dice other than the ones 
+                        mentioned above then the players score is the total value of the two dice, 
+                        eg: player rolls a 3 and 2, player gets a score of 3+2=5</p>
+                        <button id="close-btn">Close and Play</button>
+                  </div>
+                </div>
+
+                
+        
+
+
+        <footer>
+            <h2>Americo Gonzalez COMP 2132 BCIT</h2>
+           
+        </footer>
+    
+    </div>
+    
+</body>
+
+</html>
