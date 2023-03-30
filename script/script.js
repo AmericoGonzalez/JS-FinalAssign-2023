@@ -2,8 +2,8 @@ const currentScore1    = document.getElementById("currentScore1");
 const currentScore2    = document.getElementById("currentScore2");
 const totalScore1      = document.getElementById("totalScore1");
 const totalScore2      = document.getElementById("totalScore2");
-const winner            = document.getElementById("winner");
-const resetButton       = document.getElementById("btn-reset");
+const winner           = document.getElementById("winner");
+const resetButton      = document.getElementById("btn-reset");
 
 
 
